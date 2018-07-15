@@ -37,7 +37,7 @@ class PayService(object):
         return h1.hexdigest()
 
     def gen_sign(self, order_dict):
-        # TODO 完成计算签名的算法
+        # WeChat Pay计算签名的算法
         # https://pay.weixin.qq.com/wiki/doc/api/wxa/wxa_api.php?chapter=4_3
         string_list = []
         for key, value in order_dict:
